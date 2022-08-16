@@ -1,0 +1,161 @@
+/* https://coolors.co/35524a-4056f4-eeebd3-b36a5e-f7c548 */
+
+section#intro {
+    background-color: #b36a5e;
+    color: #f7c548;
+    height: 100vh;
+    padding: 30px;
+}
+
+#intro h1 {
+    font-size: 100px;
+    animation: fadein ease-in 1s;
+}
+
+#intro h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    opacity: 0;
+    animation-name: fadein;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#intro code {
+    font-size: 80px;
+    color: #9f2771;
+    opacity: 0;
+    animation-name: fadein;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#intro #downArrow {
+    position: absolute;
+    bottom: 75px;
+    color: #f7c548;
+
+    font-size: 48px;
+
+    /* opacity: 0; */
+    animation-name: fadein;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#downArrow span {
+    font-size: 75px;
+}
+
+#intro #downArrow:hover {
+    color: #9f2771;
+}
+
+section {
+    min-height: 30vh;
+}
+
+#intro {
+    padding: 30px;
+}
+
+#about {
+    font-size: 35px;
+    font-weight: 300;
+    background-color: #eeebd3;
+    color: #9f2771;
+    padding: 30px;
+}
+
+h3 {
+    font-size: 60px;
+}
+
+#contact {
+    background-color: #b36a5e;
+    color: #eeebd3;
+    font-size: 45px;
+    font-weight: 300;
+    padding: 30px;
+}
+
+#contact a {
+    color: #eeebd3;
+}
+
+#contact input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #eeebd3;
+}
+
+#contact .btn {
+    width: 100%;
+    background-color: #f7c548;
+    color: black;
+    font-size: 30px;
+}
+
+#portfolio {
+    background: #eeebd3;
+    padding: 30px;
+}
+
+#portfolio .btn {
+    background-color: #b36a5e;
+}
+
+footer {
+    background-color: #9f2771;
+    color: #eeebd3;
+    padding: 20px;
+}
+
+body {
+    background-color: #9f2771;
+}
+
+.navbar {
+    background-color: #f7c548 !important;
+}
+
+#project {
+    background-color: #b36a5e;
+    color: white;
+    padding: 20px;
+}
+
+#project img {
+    border-radius: 10px;
+}
+
+#project #navigateArrows span {
+    font-size: 40px;
+    margin-top: 25px;
+    color: #eeebd3;
+}
+
+#project .btn {
+    background-color: #9f2771;
+    color: #eeebd3;
+}
+
+@media only screen and (max-width: 768px) {
+    #intro h1 {
+        font-size: 48px;
+    }
+}
