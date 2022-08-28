@@ -6,7 +6,12 @@ const Portfolio = () => {
 
     useEffect(() => {
         const getProjects = async () => {
-            const response = await fetch("http://localhost:3001/projects");
+            let host = "http://localhost:3001";
+            if (window.location.host.indexOf(".herokuapp.com") !== -1) {
+                host = "https://christiharlow-portfolio-back.herokuapp.com";
+            }
+
+            const response = await fetch(`${host}/favorites`);
             const data = await response.json();
             setProjects(data.projects);
         };
