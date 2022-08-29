@@ -11,7 +11,7 @@ const Portfolio = () => {
                 host = "https://christiharlow-portfolio-back.herokuapp.com";
             }
 
-            const response = await fetch(`${host}/favorites`);
+            const response = await fetch(`${host}/projects`);
             const data = await response.json();
             setProjects(data.projects);
         };
