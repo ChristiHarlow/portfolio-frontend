@@ -7,7 +7,10 @@ const Portfolio = () => {
     useEffect(() => {
         const getProjects = async () => {
             let host = "http://localhost:3001";
-            if (window.location.host.indexOf(".herokuapp.com") !== -1) {
+            if (
+                window.location.host.indexOf("portfolio.christiaharlow.com") !==
+                -1
+            ) {
                 host = "https://christiharlow-portfolio-back.herokuapp.com";
             }
 
