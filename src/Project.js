@@ -117,17 +117,14 @@ const Project = () => {
                         <div className="row">
                             <div className="col">
                                 <h3>Links</h3>
-                                <Link
-                                    target="_blank"
-                                    to="https://github.com/ChristiHarlow/ChristiHarlow.github.io"
-                                >
+                                <a target="_blank" href={project.links}>
                                     <button
                                         type="button"
                                         className="btn btn-primary"
                                     >
                                         GitHub
                                     </button>
-                                </Link>
+                                </a>
                                 <Link
                                     target="_blank"
                                     to="https://www.linkedin.com/in/christi-a-harlow-16245630/"
@@ -137,17 +134,6 @@ const Project = () => {
                                         className="btn btn-primary"
                                     >
                                         Linkedin
-                                    </button>
-                                </Link>
-                                <Link
-                                    target="_blank"
-                                    to="https://github.com/ChristiHarlow/ChristiHarlow.github.io"
-                                >
-                                    <button
-                                        type="button"
-                                        className="btn btn-primary"
-                                    >
-                                        GitHub
                                     </button>
                                 </Link>
                             </div>
