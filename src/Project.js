@@ -11,7 +11,7 @@ const Project = () => {
                 window.location.host.indexOf("portfolio.christiaharlow.com") !==
                 -1
             ) {
-                host = "https://christiharlow-portfolio-back.herokuapp.com";
+                host = "https://christiaharlow.com";
             }
             const response = await fetch(`${host}/project/${params.id}`);
             const data = await response.json();
