@@ -6,8 +6,12 @@ const Project = () => {
     const params = useParams();
     useEffect(() => {
         const getProject = async () => {
-            const response = await fetch(`${host}/project/${params.id}`);
-            let host = "http://localhost:3001";
+            const response = await fetch(
+                `http://localhost:3001/project/${params.id}`
+            );
+
+            //const response = await fetch(`${host}/project/${params.id}`);
+            //let host = "http://localhost:3001";
 
             const data = await response.json();
             setProject(data.project);
