@@ -6,13 +6,12 @@ const Project = () => {
     const params = useParams();
     useEffect(() => {
         const getProject = async () => {
-            const response = await fetch(
-                `http://localhost:3001/project/${params.id}`
-            );
+            let host = "http://localhost:3001";
+            if (window.location.host.indexOf("christiaharlow.com") !== -1) {
+                host = "https://api.christiaharlow.com";
+            }
 
-            //const response = await fetch(`${host}/project/${params.id}`);
-            //let host = "http://localhost:3001";
-
+            const response = await fetch(`${host}/project/${params.id}`);
             const data = await response.json();
             setProject(data.project);
         };
