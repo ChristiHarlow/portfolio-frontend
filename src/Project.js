@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
 const Project = () => {
-    const [project, setProject] = useState();
+    const [project, setProject] = useState([]);
     const params = useParams();
     useEffect(() => {
         const getProject = async () => {
@@ -17,7 +17,7 @@ const Project = () => {
         };
 
         getProject();
-    });
+    }, []);
 
     if (!project) {
         return (
