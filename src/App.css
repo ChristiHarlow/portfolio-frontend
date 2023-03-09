@@ -24,7 +24,7 @@ section#intro {
 }
 
 #intro code {
-    font-size: 80px;
+    font-size: 60px;
     color: #9f2771;
     opacity: 0;
     animation-name: fadein;
