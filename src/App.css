@@ -8,7 +8,7 @@ section#intro {
 }
 
 #intro h1 {
-    font-size: 60px;
+    font-size: 40px;
     animation: fadein ease-in 1s;
 }
 
@@ -24,7 +24,7 @@ section#intro {
 }
 
 #intro code {
-    font-size: 60px;
+    font-size: 40px;
     color: #9f2771;
     opacity: 0;
     animation-name: fadein;
