@@ -3,12 +3,12 @@
 section#intro {
     background-color: #b36a5e;
     color: #f7c548;
-    height: 100vh;
+    height: 60vh;
     padding: 30px;
 }
 
 #intro h1 {
-    font-size: 100px;
+    font-size: 60px;
     animation: fadein ease-in 1s;
 }
 
