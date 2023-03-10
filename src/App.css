@@ -3,7 +3,7 @@
 section#intro {
     background-color: #b36a5e;
     color: #f7c548;
-    height: 50vh;
+    height: 30vh;
     padding: 30px;
 }
 
@@ -13,6 +13,7 @@ section#intro {
 }
 
 #intro h3 {
+    font-size: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
 
@@ -56,16 +57,8 @@ section#intro {
     animation-fill-mode: forwards;
 }
 
-#downArrow span {
-    font-size: 75px;
-}
-
 #intro #downArrow:hover {
     color: #9f2771;
-}
-
-section {
-    min-height: 30vh;
 }
 
 #intro {
@@ -78,16 +71,17 @@ section {
     background-color: #eeebd3;
     color: #9f2771;
     padding: 30px;
+    height: 60vh;
 }
 
 h3 {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 #contact {
     background-color: #b36a5e;
     color: #eeebd3;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 300;
     padding: 30px;
 }
