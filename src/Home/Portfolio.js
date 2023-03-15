@@ -51,7 +51,6 @@ const Portfolio = () => {
                                         to={`/project/${project.id}`}
                                         className="btn btn-primary"
                                     >
-                                        {" "}
                                         Learn more
                                     </Link>
                                 </div>

@@ -45,7 +45,7 @@ section#intro {
 
 #intro #downArrow {
     position: absolute;
-    bottom: 75px;
+    bottom: 175px;
     color: #f7c548;
 
     font-size: 48px;
@@ -71,7 +71,7 @@ section#intro {
     background-color: #eeebd3;
     color: #9f2771;
     padding: 30px;
-    height: 90vh;
+    min-height: 90vh;
 }
 
 h3 {
@@ -108,7 +108,7 @@ textarea {
 #portfolio {
     background: #eeebd3;
     padding: 30px;
-    height: 50vh;
+    /* height: 50vh; */
 }
 
 #portfolio .btn {

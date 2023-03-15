@@ -31,7 +31,7 @@ const Project = () => {
         <div className="container">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="index.html">
+                    <Link className="navbar-brand" to="/">
                         Christi A. Harlow
                     </Link>
                     <button
@@ -84,7 +84,7 @@ const Project = () => {
                             className="img-fluid"
                         />
                         <div id="navigateArrows">
-                            <Link to={project.imageURL}>
+                            {/* <Link to={project.imageURL}>
                                 <span className="material-symbols-outlined navigate">
                                     navigate_before
                                 </span>
@@ -93,7 +93,7 @@ const Project = () => {
                                 <span className="material-symbols-outlined navigate">
                                     navigate_next
                                 </span>
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
 
