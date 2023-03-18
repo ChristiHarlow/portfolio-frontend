@@ -3,20 +3,26 @@
 section#intro {
     background-color: #b36a5e;
     color: #f7c548;
-    height: 90vh;
+    height: 100vh;
     padding: 30px;
 }
 
 #intro h1 {
-    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 96px;
     animation: fadein ease-in 1s;
 }
 
+@media only screen and (max-width: 600px) {
+    #intro h1 {
+        font-size: 48px;
+    }
+}
+
 #intro h3 {
-    font-size: 40px;
+    font-size: 60px;
     margin-top: 20px;
     margin-bottom: 20px;
-
     opacity: 0;
     animation-name: fadein;
     animation-delay: 1s;
@@ -25,7 +31,8 @@ section#intro {
 }
 
 #intro code {
-    font-size: 40px;
+    margin-top: 20px;
+    font-size: 60px;
     color: #9f2771;
     opacity: 0;
     animation-name: fadein;
@@ -44,47 +51,37 @@ section#intro {
 }
 
 #intro #downArrow {
-    position: absolute;
-    bottom: 175px;
+    font-size: 75px;
     color: #f7c548;
-
-    font-size: 48px;
-
-    /* opacity: 0; */
+    opacity: 1;
     animation-name: fadein;
-    animation-delay: 5s;
-    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
+
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 37px);
 }
 
 #intro #downArrow:hover {
     color: #9f2771;
 }
 
-#intro {
-    padding: 30px;
-}
-
 #about {
-    font-size: 35px;
-    font-weight: 300;
     background-color: #eeebd3;
     color: #9f2771;
     padding: 30px;
-    min-height: 90vh;
 }
 
-h3 {
-    font-size: 40px;
+#about h5 {
+    font: size 60px;
 }
 
 #contact {
     background-color: #b36a5e;
     color: #eeebd3;
-    font-size: 40px;
-    font-weight: 300;
     padding: 30px;
-    height: 70vh;
 }
 
 #contact a {
@@ -92,14 +89,16 @@ h3 {
 }
 
 #contact input,
-textarea {
+#contact textarea {
     width: 100%;
     margin-bottom: 20px;
     background-color: #eeebd3;
+    padding: 10px;
 }
 
 #contact .btn {
     width: 100%;
+    margin-top: 15px;
     background-color: #f7c548;
     color: black;
     font-size: 30px;
@@ -148,10 +147,4 @@ body {
 #project .btn {
     background-color: #9f2771;
     color: #eeebd3;
-}
-
-@media only screen and (max-width: 768px) {
-    #intro h1 {
-        font-size: 48px;
-    }
 }

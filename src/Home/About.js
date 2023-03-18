@@ -4,23 +4,14 @@ const About = () => {
             id="about"
             className="d-flex flex-column justify-content-center"
         >
-            <h3>About</h3>
-            <p>-Full Stack Bootcamp Graduate</p>
-            <p>
-                Experienced Analyst working in Healthcare, Health Insurance, and
-                Team Supervision. Bachelor of Science (BS) focused in Business,
-                Management, and Economics.
-            </p>
-            <p>
-                Team Supervisor lead a team of Contact Tracers working remotely,
-                that collectively performed the functions of the Contact Tracing
-                Initiative.
-            </p>
-            <p>
-                Coding Analyst detected potential health care fraud, through the
-                identification of aberrant coding and/or billing patterns.
-                Audits and analyzes claims for recovery efforts.
-            </p>
+            <h1>About</h1>
+            <h5>
+                Full Stack Bootcamp Graduate. Knowledge of programming in HTML,
+                CSS, JavaScript, Node.JS and React.JS. Understanding of
+                programming in SQL. Good analytical, problem-solving and
+                decision making skills. Comprehension of software applications,
+                design tools, relational database management and languages.
+            </h5>
         </section>
     );
 };

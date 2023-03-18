@@ -123,17 +123,6 @@ const Project = () => {
                                         GitHub
                                     </button>
                                 </a>
-                                <Link
-                                    target="_blank"
-                                    to="https://www.linkedin.com/in/christi-a-harlow-16245630/"
-                                >
-                                    <button
-                                        type="button"
-                                        className="btn btn-primary"
-                                    >
-                                        Linkedin
-                                    </button>
-                                </Link>
                             </div>
                             <div className="col">
                                 <h3>Tech Stack</h3>
