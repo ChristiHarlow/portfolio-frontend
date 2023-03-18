@@ -83,18 +83,7 @@ const Project = () => {
                             src={`/${project.imageURL}`}
                             className="img-fluid"
                         />
-                        <div id="navigateArrows">
-                            {/* <Link to={project.imageURL}>
-                                <span className="material-symbols-outlined navigate">
-                                    navigate_before
-                                </span>
-                            </Link>
-                            <Link to={project.imageURL}>
-                                <span className="material-symbols-outlined navigate">
-                                    navigate_next
-                                </span>
-                            </Link> */}
-                        </div>
+                        <div id="navigateArrows"></div>
                     </div>
 
                     <div className="col-8">
