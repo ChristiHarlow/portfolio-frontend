@@ -17,7 +17,7 @@ const Project = () => {
         };
 
         getProject();
-    }, []);
+    }, [params.id]);
 
     if (!project) {
         return (
@@ -32,7 +32,7 @@ const Project = () => {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
-                        Christi A. Harlow
+                        Christi Alecia Harlow
                     </Link>
                     <button
                         className="navbar-toggler"
@@ -82,6 +82,7 @@ const Project = () => {
                         <img
                             src={`/${project.imageURL}`}
                             className="img-fluid"
+                            alt=""
                         />
                         <div id="navigateArrows"></div>
                     </div>
@@ -104,7 +105,7 @@ const Project = () => {
                         <div className="row">
                             <div className="col">
                                 <h3>Links</h3>
-                                <a target="_blank" href={project.links}>
+                                <a target="_blank" href={project.links}rel="noopener noreferrer">
                                     <button
                                         type="button"
                                         className="btn btn-primary"
