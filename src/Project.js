@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const Project = () => {
     const [project, setProject] = useState([]);
@@ -7,8 +7,8 @@ const Project = () => {
     useEffect(() => {
         const getProject = async () => {
             let host = "http://localhost:3001";
-            if (window.location.host.indexOf("christiaharlow.com") !== -1) {
-                host = "https://api.christiaharlow.com";
+            if (window.location.host.indexOf("christialeciaharlow.com") !== -1) {
+                host = "https://api.christialeciaharlow.com";
             }
 
             const response = await fetch(`${host}/project/${params.id}`);
